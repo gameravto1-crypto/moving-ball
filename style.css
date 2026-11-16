@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(4, 4, 57);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ball {
+  background-color: aqua;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 350px;
+  left: 500px;
+  animation: colors 2s infinite alternate;
+}
+.background {
+  background-color: rgba(128, 128, 128, 0.174);
+  width: 450px;
+  height: 120px;
+  border-radius: 15px;
+  position: absolute;
+  top: 330px;
+}
+
+@keyframes colors {
+  0% {
+    background-color: aqua;
+  }
+  50% {
+    left: 325px;
+    background-color: rgb(7, 7, 143);
+  }
+  100% {
+    left: 170px;
+    background-color: rgb(121, 10, 121);
+  }
+}
